@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+   
+}
+
+/* Main Container */
+ .container {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: -15px 17px 17px rgba(10, 10, 10,0,25);  
+    border: 1px solid rgba(255, 255, 255, 0.7); 
+   
+} 
+
+
+
+
+.neon-input {
+    background: none; 
+    border: none; 
+    border-bottom: 2px solid rgba(0, 255, 127, 0.6); 
+    color: #00FF7F !important; 
+    
+    font-size: 1rem;
+    padding: 5px 0; 
+    text-transform: uppercase;
+    width: 100%; 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+    text-shadow: 0 0 5px #00FF7F, 0 0 10px #00FF7F;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #00FF7F !important;  
+    box-shadow: 0 0 0px 1000px #000 inset;  
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.neon-input:focus {
+    outline: none;
+    border-bottom: 2px solid #00FF7F; 
+    color: #00FF7F !important; 
+    
+    box-shadow: none; 
+}
+
+.neon-input::placeholder {
+    color: #00FF7F;
+    font-size: 1rem;
+    text-shadow: 0 0 2px #00FF7F, 0 0 2px #00FF7F; 
+}
+
+
+/* Neon Label Styling */
+ .neon-label {
+    color: #00FF7F;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00FF7F, 0 0 10px #00FF7F;
+    display: inline-block;
+}  
+
+
+
+
+
+@media (max-width: 480px) {
+    .neon-input {
+        font-size: 1rem;
+        padding: 8px 12px;
+        color: #00FF7F;
+        background: transparent;
+    }
+
+    .neon-label {
+        font-size: 0.9rem;
+    }
+
+    .neon-input::placeholder {
+        font-size: 0.9rem;
+    }
+
+
+
+    .neon-text-one{
+        font-size: 1rem;
+    }
+
+.neon-text{
+    font-size: 0.9rem;
+}
+
+
+
+}
+
+
+.neon-text-one{
+    color: #00FF7F;
+    text-shadow: 0 0 8px #00FF7F, 0 0 15px #00FF7F, 0 0 20px #00FF7F;
+    margin-bottom: 10px; 
+}
+
+.neon-text { 
+    color: #00FF7F;
+    text-shadow: 0 0 8px #00FF7F, 0 0 15px #00FF7F, 0 0 20px #00FF7F;
+    margin-bottom: 10px; 
+} 
+
+
+
+
+/* buttons */
+.neon-button {
+    background-color: #000;
+    border: 2px solid rgba(0, 255, 127, 0.6);
+    text-shadow: 0 0 5px #00FF7F, 0 0 10px #00FF7F; 
+    box-shadow: 0px 4px 15px rgba(0, 255, 127, 0.5);
+    color: #00FF7F; 
+    background:#000;
+    
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-shadow: 0 0 5px #00FF7F, 0 0 10px #00FF7F;
+    box-shadow: 0px 4px 15px rgba(0, 255, 127, 0.5);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px; 
+}
+
+
+
+
+.fas {
+    color: #fff;
+}
+
+.neon-button:hover {
+    color: #fff;
+    background: rgba(0, 255, 127, 0.2);
+    box-shadow: 0px 0px 20px #00FF7F, 0px 0px 30px #00FF7F;
+} 
+
+
+
+
+
+
+

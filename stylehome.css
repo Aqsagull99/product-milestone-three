@@ -1,0 +1,280 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+ body {
+    background-color: #000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+} 
+
+
+
+/* Main Container */
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.name-circle {
+    
+    backdrop-filter: blur(25px);
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow: -15px 17px 17px rgba(10, 10, 10,0,25);  
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+
+.name-circle:hover {
+    color: #fff;
+    background: rgba(0, 255, 127, 0.2); 
+    box-shadow: 0px 0px 20px #00FF7F, 0px 0px 30px #00FF7F;
+}
+
+
+
+
+
+/* Top icon styling */
+.top-icon {
+    position: absolute;
+    top: -30px;
+    color: #00FF7F;
+    font-size: 3rem;
+    text-shadow: 0 0 10px #00FF7F, 0 0 20px #00FF7F;
+}
+
+/* Text container styles */
+.text-container {
+    text-align: center;
+}
+
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 75%; }
+}
+
+@keyframes blink-caret {
+    50% { border-color: transparent; }
+}
+
+.name-circle h1 {
+    font-size: 3.5rem;
+    color: #00FF7F;
+    text-shadow: 0 0 8px #00FF7F, 0 0 15px #00FF7F, 0 0 20px #00FF7F;
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #00FF7F;
+    display: inline-block;
+    
+    
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #00FF7F;
+    width: 100%;
+    animation: typing 3s steps(30, end) infinite, blink-caret 0.5s step-end infinite;
+}
+
+
+
+
+  .name-circle h1:hover {
+    color: #fff;
+    cursor: pointer;
+   
+}  
+
+.name-circle p:hover {
+    color: #fff;
+    cursor: pointer;
+   
+}
+
+
+
+
+
+.name-circle p {
+    font-size: 3.2rem;
+    color: #00FF7F;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #00FF7F;
+    
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards, glowPulse 2s ease-in-out infinite;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Glow pulsing animation */
+@keyframes glowPulse {
+    0%, 100% {
+        text-shadow: 0 0 5px #00FF7F, 0 0 10px #00FF7F, 0 0 15px #00FF7F;
+    }
+    50% {
+        text-shadow: 0 0 15px #00FF7F, 0 0 20px #00FF7F, 0 0 25px #00FF7F;
+    }
+}
+
+/* About Me text styling */
+   .about-section p {
+    font-size: 2rem;
+    
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+    
+}    
+
+ .name-circle p {
+    font-size: 1rem;
+    color: #00FF7F;
+    margin-top: 8px;
+    text-shadow: 0 0 5px #00FF7F, 0 0 10px #00FF7F; 
+    opacity: 0.8; 
+} 
+
+
+
+ .button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.neon-button {
+    height: 100px;
+    width: 100px;
+    background-color: #000;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    color: #00FF7F;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-shadow: 0 0 5px #00FF7F, 0 0 10px #00FF7F;
+    box-shadow: 0px 4px 15px rgba(0, 255, 127, 0.5);
+    transition: 0.3s ease;
+    position: relative;
+    transform: rotate(45deg); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.neon-button span {
+    transform: rotate(-45deg); 
+}
+
+.neon-button:hover {
+    color: #fff;
+    background: rgba(0, 255, 127, 0.2);
+    box-shadow: 0px 0px 20px #00FF7F, 0px 0px 30px #00FF7F;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0px 4px 15px rgba(0, 255, 127, 0.5), 0 0 10px #00FF7F, 0 0 15px #00FF7F;
+    }
+    50% {
+        box-shadow: 0px 4px 25px rgba(0, 255, 127, 0.7), 0 0 20px #00FF7F, 0 0 25px #00FF7F;
+    }
+}
+
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .name-circle {
+        width: 300px; 
+        height: 300px;
+    }
+
+    .name-circle h1 {
+        font-size: 1.5rem; 
+    }
+
+    .name-circle p {
+        font-size: 1rem; 
+    }
+
+    .button-container {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .neon-button {
+        width: 100px; 
+        height: 100px;
+        font-size: 0.9rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .name-circle {
+        width: 300px;
+        height: 300px;
+         
+    }
+
+    .name-circle h1 {
+        font-size: 1.5rem;
+    }
+
+    .name-circle p {
+        font-size: 1rem;
+    }
+
+    
+
+    .button-container {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .neon-button {
+        width: 100px; 
+        height: 100px;
+        font-size: 0.9rem; 
+    }
+
+
+
+}
+
+
+
+

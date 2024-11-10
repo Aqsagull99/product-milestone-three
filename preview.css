@@ -1,0 +1,196 @@
+body {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    padding: 20px;
+    margin: 0;
+    overflow-x: hidden; 
+}
+
+.resume-container-one {
+    background-color: #000;
+    border: 1px solid rgba(255, 255, 255, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 80vh;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden; 
+}
+
+.resume-content {
+    display: flex;
+    width: 100%;
+    gap: 0;
+    align-items: stretch;
+    position: relative;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-sizing: border-box; 
+}
+/* Profile Section */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.Download-button {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+    padding: 20px 0;
+    width: 100%;
+    background-color:#000;
+}
+
+.profile-text {
+    color: #00FF7F;
+}
+
+.fas {
+    color: #fff;
+}
+
+/* Button styling */
+.neon-button {
+    background-color: #000;
+    border: 2px solid rgba(0, 255, 127, 0.6);
+    text-shadow: 0 0 5px #00FF7F, 0 0 10px #00FF7F;
+    box-shadow: 0px 4px 15px rgba(0, 255, 127, 0.5);
+    color: #00FF7F;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 30px;
+   
+    transition: background-color 0.3s;
+}
+
+.neon-button:hover {
+    color: #fff;
+    background: rgba(0, 255, 127, 0.2);
+    box-shadow: 0px 0px 20px #00FF7F, 0px 0px 30px #00FF7F;
+}
+
+.Data-container {
+    border-bottom: 2px solid green;
+    padding-bottom: 70px;
+    padding: 15px;
+}
+
+.Data-container p {
+    font-size: 14px;
+    color: white;
+    border-bottom: 1px solid green;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+ul {
+    font-size: 14px;
+    color: white;
+    border-bottom: 1px solid green;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.Data-container h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Resume Section */
+.resume-section {
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.resume-section h3 {
+    font-size: 16px;
+    color: #00FF7F;
+    text-shadow: 0 0 5px #00FF7F, 0 0 10px #00FF7F;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .resume-container-one {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        /* border: none; */
+    }
+
+    .left-column, .right-column {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .resume-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .Download-button {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: black;
+    border: 2px solid white;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 90vh; 
+    overflow-y: auto; 
+}
